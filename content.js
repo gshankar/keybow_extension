@@ -23,7 +23,10 @@ const KEY_MAPPING = {
     'Numpad6': { name: 'Surprised', char: '😮', fallbackSelectors: ['[aria-label*="Surprise" i]', '[aria-label*="😮"]'] },
     'Numpad7': { name: 'Cry', char: '😢', fallbackSelectors: ['[aria-label*="Cry" i]', '[aria-label*="😢"]'] },
     'Numpad8': { name: 'Thinking', char: '🤔', fallbackSelectors: ['[aria-label*="Thinking" i]', '[aria-label*="🤔"]'] },
-    'Numpad9': { name: 'Thumbs Down', char: '👎', fallbackSelectors: ['[aria-label*="Thumbs down" i]', '[aria-label*="👎"]'] }
+    'Numpad9': { name: 'Thumbs Down', char: '👎', fallbackSelectors: ['[aria-label*="Thumbs down" i]', '[aria-label*="👎"]'] },
+    'Numpad0': { name: 'Toggle Microphone', char: '🎤', fallbackSelectors: ['[aria-label*="microphone" i]', '[data-tooltip*="microphone" i]'] },
+    'NumpadDecimal': { name: 'Toggle Camera', char: '📷', fallbackSelectors: ['[aria-label*="camera" i]', '[data-tooltip*="camera" i]'] },
+    'NumpadEqual': { name: 'Raise/Lower Hand', char: '✋', fallbackSelectors: ['[aria-label*="hand" i]', '[data-tooltip*="hand" i]'] }
 };
 
 // --- DEBUG UI ---
