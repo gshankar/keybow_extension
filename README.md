@@ -18,17 +18,22 @@ When a Numpad key is received, it programmatically queries the Google Meet DOM f
 ### Key Layout & Emoji Mapping
 The extension listens flawlessly to the Numpad outputs from the Keybow. When holding the physical Keybow with the USB cable at the top, the hardware layout triggers the following Google Meet reactions:
 
-| Position | Emoji Triggered | Keybow LED Color |
-|----------|-------|-----------|
-| **Top Left** | ❤️ Heart | Red |
-| **Top Mid** | 👍 Thumbs Up | Yellow |
-| **Top Right** | 🎉 Party | Purple |
-| **Mid Left** | 👏 Clap | Green |
-| **Center** | 😂 Laugh | Bright Blue |
-| **Mid Right** | 😮 Surprise | Pink |
-| **Bot Left** | 😢 Cry | Dark Blue |
-| **Bot Mid** | 🤔 Thinking | Orange |
-| **Bot Right** | 👎 Thumbs Down | Yellow |
+| Position | Emoji / Action Triggered | Keybow LED Color |
+|----------|--------------------------|------------------|
+| **Row 1 Left** | ❤️ Heart | Red |
+| **Row 1 Mid**  | 👍 Thumbs Up | Yellow |
+| **Row 1 Right**| 🎉 Party | Purple |
+| **Row 2 Left** | 👏 Clap | Green |
+| **Row 2 Mid**  | 😂 Laugh | Bright Blue |
+| **Row 2 Right**| 😮 Surprise | Pink |
+| **Row 3 Left** | 😢 Cry | Dark Blue |
+| **Row 3 Mid**  | 🤔 Thinking | Orange |
+| **Row 3 Right**| 👎 Thumbs Down | Yellow |
+| **Row 4 Left** | 🎤 Toggle Mute | Red (Muted) / White |
+| **Row 4 Mid**  | 📷 Toggle Video | Red (Off) / White |
+| **Row 4 Right**| ✋ Raise Hand | Green (Raised) / White |
+
+> **⚠️ Note on Media Controls:** Because the Keybow does not establish a bi-directional data flow from the browser tab back to the USB hardware, the LEDs for the hardware toggles (Mute, Video, Hand) are purely tracked *locally* by the macro pad. If you change these states using your mouse on the Google Meet screen, the hardware keys will become slightly desynchronized with your actual Meet status.
 
 ## Installation
 1. Clone or download this repository.
