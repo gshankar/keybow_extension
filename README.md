@@ -15,6 +15,21 @@ When a Numpad key is received, it programmatically queries the Google Meet DOM f
 - **Debug Toast Mode:** If you ever need to troubleshoot your hardware integration, simply click the Keybow extension icon in your Chrome toolbar. This opens a settings popup where you can toggle an "On-Screen Debug Toast" (disabled by default). When enabled, a small green notification will pop up in Google Meet whenever a Keybow stroke is recognized.
 - **Zero Configuration:** Absolutely no Chrome shortcut mapping is required. Just load the extension and go.
 
+### Key Layout & Emoji Mapping
+The extension listens flawlessly to the Numpad outputs from the Keybow. When holding the physical Keybow with the USB cable at the top, the hardware layout triggers the following Google Meet reactions:
+
+| Position | Emoji Triggered | Keybow LED Color |
+|----------|-------|-----------|
+| **Top Left** | ❤️ Heart | Red |
+| **Top Mid** | 👍 Thumbs Up | Yellow |
+| **Top Right** | 🎉 Party | Purple |
+| **Mid Left** | 👏 Clap | Green |
+| **Center** | 😂 Laugh | Bright Blue |
+| **Mid Right** | 😮 Surprise | Pink |
+| **Bot Left** | 😢 Cry | Dark Blue |
+| **Bot Mid** | 🤔 Thinking | Orange |
+| **Bot Right** | 👎 Thumbs Down | Yellow |
+
 ## Installation
 1. Clone or download this repository.
 2. In Google Chrome, navigate to `chrome://extensions/`.
