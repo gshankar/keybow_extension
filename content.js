@@ -1,6 +1,17 @@
 // --- CONFIGURATION ---
-// Set to false to disable the green text popups in the corner
-const DEBUG_MODE = true; 
+let DEBUG_MODE = false; // Disabled by default
+
+// Load initial state from extension popup
+chrome.storage.local.get(['debugMode'], (result) => {
+    DEBUG_MODE = result.debugMode || false;
+});
+
+// Keep state updated instantly if user clicks the popup while on the page
+chrome.storage.onChanged.addListener((changes) => {
+    if (changes.debugMode) {
+        DEBUG_MODE = changes.debugMode.newValue;
+    }
+});
 
 // Maps our Numpad keys to the emojis and potential Google Meet button selectors
 const KEY_MAPPING = {

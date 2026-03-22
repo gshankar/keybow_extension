@@ -9,7 +9,11 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": [],
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Keybow Settings"
+  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
