@@ -12,7 +12,7 @@ When a Numpad key is received, it programmatically queries the Google Meet DOM f
 **Privacy First:** This extension has exactly zero external network requests, zero background tracking, and an empty permissions array. It only runs locally within your Google Meet tabs.
 
 ## Features
-- **Debug Toast Mode:** The `content.js` script includes a `DEBUG_MODE` constant (enabled by default) that pops up a small, temporary green toast notification on your screen whenever a Keybow stroke is recognized. This visual guarantee helps diagnose hardware connectivity!
+- **Debug Toast Mode:** If you ever need to troubleshoot your hardware integration, simply click the Keybow extension icon in your Chrome toolbar. This opens a settings popup where you can toggle an "On-Screen Debug Toast" (disabled by default). When enabled, a small green notification will pop up in Google Meet whenever a Keybow stroke is recognized.
 - **Zero Configuration:** Absolutely no Chrome shortcut mapping is required. Just load the extension and go.
 
 ## Installation
